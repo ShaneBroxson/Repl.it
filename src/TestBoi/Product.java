@@ -3,9 +3,9 @@ package TestBoi;
 public class Product implements Item {
     private String name;
     private String manufacturer;
-    private String type;
+    private Item type;
 
-    Product(String n, String m, String t) {
+    Product(String n, String m, Item t) {
         name = n;
         manufacturer = m;
         type = t;
@@ -17,7 +17,7 @@ public class Product implements Item {
 }
 
 class Widget extends Product {
-    Widget(String n, String m, String t) {
+    Widget(String n, String m, Item t) {
         super(n, m, t);
     }
 }
